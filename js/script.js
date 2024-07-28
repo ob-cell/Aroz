@@ -166,11 +166,11 @@ const firebaseConfig = {
 
   // to modify (enter to send a message, doesn't work properly)
 
-  messageInput.addEventListener('keydown', (event) => {
-if (event.keyCode === 13) { // Check for Enter key press
-event.preventDefault(); // Prevent default form submission behavior
-sendButton.click(); // Simulate click on sendButton
-}
+input.addEventListener("keypress", function(event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    document.getElementById("sendButton").click();
+  }
 });
 
 // Emoji picker
