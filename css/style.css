@@ -1,0 +1,64 @@
+#chatSection {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    /* Constrain width to phone width */
+    margin: 0 auto;
+    height: 100vh;
+    /* Full viewport height */
+  }
+
+  @media (max-width: 767px) {
+    .message {
+      max-width: 300px;
+    }
+
+    #chatSection {
+      max-width: 100%;
+    }
+
+    .input-group {
+      max-width: 100%;
+    }
+
+    .nav-width {
+      max-width: 100%;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .message {
+      max-width: 550px;
+    }
+    
+    #chatSection {
+      max-width: 75%;
+      
+    }
+    
+    .input-group {
+      max-width: 75%;
+    }
+
+    .nav-width {
+      max-width: 75%;
+    }
+  }
+
+  /* For Webkit-based browsers */
+  ::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    border-radius: 0;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 0;
+  }
+  .btn-primary {
+background-color: #00ff90 !important;
+}
